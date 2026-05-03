@@ -1,0 +1,22 @@
+.big-sitemap-wrap { max-width: 1400px; margin: 20px; }
+.big-sitemap-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 30px 0; }
+.stat-box { background: #fff; border: 1px solid #c3c4c7; border-radius: 4px; padding: 20px; text-align: center; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
+.stat-value { font-size: 32px; font-weight: 600; color: #2271b1; margin-bottom: 8px; }
+.stat-value.stat-value-sm { font-size: 15px; font-weight: 600; line-height: 1.5; }
+.stat-label { font-size: 14px; color: #50575e; }
+.action-buttons { margin: 16px 0 0; }
+.action-buttons .button { margin-right: 10px; }
+.big-sitemap-section { background: #fff; padding: 20px; border: 1px solid #c3c4c7; margin-top: 20px; border-radius: 4px; }
+#big-sitemap-message { margin-top: 20px; padding: 12px; }
+.big-sitemap-section table.widefat { margin-top: 15px; }
+.priority-select, .changefreq-select { min-width: 100px; }
+.big-sitemap-excluded-count { font-size: 14px; font-weight: normal; color: #d63638; }
+#big-sitemap-excluded-table tr { opacity: 0.75; }
+#big-sitemap-excluded-table tr td:first-child a { color: #d63638; text-decoration: line-through; }
+
+/* Content Types on Dashboard */
+.big-sitemap-content-types { margin: 20px 0 0; padding: 14px 16px; background: #f6f7f7; border: 1px solid #dcdcde; border-radius: 4px; }
+.big-sitemap-content-types h3 { font-size: 13px; font-weight: 600; color: #1d2327; margin: 0 0 10px; }
+.big-sitemap-type-checkboxes { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.big-sitemap-type-label { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; cursor: pointer; }
+.big-sitemap-type-label input[type=checkbox] { margin: 0; }
