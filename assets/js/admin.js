@@ -62,8 +62,13 @@ jQuery(function($){
 			overrides: JSON.stringify(overrides)
 		}, function(res){
 			btn.prop('disabled', false).text('Save Changes & Regenerate');
-			if (res.success) showMsg(res.data.message, 'notice-success');
-			else showMsg(res.data, 'notice-error');
+			if (res.success) {
+				showMsg(res.data.message, 'notice-success');
+				// Reload page after 1.5 seconds to show excluded URLs moved to bottom section
+				setTimeout(function(){ location.reload(); }, 1500);
+			} else {
+				showMsg(res.data, 'notice-error');
+			}
 		});
 	});
 
