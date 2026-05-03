@@ -35,7 +35,11 @@ jQuery(function($){
 			type_defaults: defaults
 		}, function(res){
 			btn.prop('disabled', false).text('🔄 Save & Generate Sitemap');
-			if (res.success) showMsg(res.data.message, 'notice-success');
+			if (res.success) {
+				showMsg(res.data.message, 'notice-success');
+				// Reload page after 1.5 seconds to show updated values
+				setTimeout(function(){ location.reload(); }, 1500);
+			}
 			else showMsg(res.data, 'notice-error');
 		});
 	});
@@ -99,5 +103,26 @@ jQuery(function($){
 			if (res.success) showMsg(res.data.message, 'notice-success');
 			else showMsg(res.data, 'notice-error');
 		});
+	});
+
+	// Toggle type defaults table rows based on checkboxes
+	function toggleTypeDefaultsRows() {
+		$('.big-sitemap-type-check').each(function(){
+			var type = $(this).val();
+			var row = $('select[name="type_defaults[' + type + '][priority]"]').closest('tr');
+			if ($(this).is(':checked')) {
+				row.show();
+			} else {
+				row.hide();
+			}
+		});
+	}
+
+	// Initialize on page load
+	toggleTypeDefaultsRows();
+
+	// Update when checkboxes change
+	$('.big-sitemap-type-check').on('change', function(){
+		toggleTypeDefaultsRows();
 	});
 });
