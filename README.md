@@ -56,7 +56,7 @@ Access the dashboard at: **Admin > Big Sitemap**
 ## Recent Updates
 
 ### Version 1.0.0 (Latest)
-- Text domain consistency: `big-sitemap`
+- Text domain consistency: `big-seo-sitemap-main`
 - Security enhancements: wp_unslash, nonce verification
 - Timezone-safe date handling: gmdate()
 - WordPress function standards: wp_delete_file()
