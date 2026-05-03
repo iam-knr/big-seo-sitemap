@@ -3,7 +3,7 @@ Contributors: kailasnathr
 Donate link: https://www.linkedin.com/in/iamknr/
 Tags: sitemap, xml sitemap, seo, google sitemap, auto sitemap, search engine, bing sitemap, category sitemap
 Requires at least: 5.8
-Tested up to: 6.7
+Tested up to: 6.9
 Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -123,7 +123,7 @@ Yes! All public custom post types are automatically detected and can be included
 
 = Is the plugin translation ready? =
 
-Yes, the plugin is fully internationalized with text domain `big-seo-sitemap-main` and ready for translation.
+Yes, the plugin is fully internationalized with text domain `big-seo-sitemap` and ready for translation.
 
 = Does it affect site performance? =
 
