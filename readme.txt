@@ -1,7 +1,7 @@
 === Big SEO Sitemap ===
 Contributors: kailasnathr
 Donate link: https://www.linkedin.com/in/iamknr/
-Tags: sitemap, xml sitemap, seo, google sitemap, auto sitemap, search engine, bing sitemap, category sitemap
+Tags: sitemap, xml sitemap, seo, google sitemap, auto sitemap
 Requires at least: 5.8
 Tested up to: 6.9
 Stable tag: 1.0.0
